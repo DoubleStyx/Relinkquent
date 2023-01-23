@@ -1,6 +1,6 @@
 # Relinkquent
 
-A [NeosModLoader](https://github.com/zkxs/NeosModLoader) mod for [Neos VR](https://neos.com/) that allows you to open links in messages sent by contacts in NeosVR.
+Enhance your [Neos VR](https://neos.com/) experience with the Relinkquent mod that enables you to easily open links contained within messages from your contacts.
 
 ## Installation
 1. Install [NeosModLoader](https://github.com/zkxs/NeosModLoader).
