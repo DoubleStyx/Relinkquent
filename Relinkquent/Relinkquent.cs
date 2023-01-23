@@ -11,14 +11,20 @@ namespace Relinkquent
 {
     public class Relinkquent : NeosMod
     {
+        [AutoRegisterConfigKey]
+        public static ModConfigurationKey<string> REGEX = new ModConfigurationKey<string>("Regex String", computeDefault: () => @"\w+:(\/?\/?)[^\s]+");
+
         public override string Name => "Relinkquent";
-        public override string Author => "kka429";
+        public override string Author => "DoubleStyx";
         public override string Version => "1.0.0";
-        public override string Link => "https://github.com/rassi0429/Relinkquent"; // this line is optional and can be omitted
+        public override string Link => "https://github.com/DoubleStyx/Relinkquent";
+
+        public static ModConfiguration config;
 
         public override void OnEngineInit()
         {
-            Harmony harmony = new Harmony("dev.kokoa.relinkquent");
+            config = GetConfiguration();
+            Harmony harmony = new Harmony("net.DoubleStyx.Relinkquent");
             harmony.PatchAll();
         }
 
@@ -67,7 +73,7 @@ namespace Relinkquent
                         }
                     }
                 }
-                string expr = @"\w+:(\/?\/?)[^\s]+";
+                string expr = config.GetValue(REGEX);
                 foreach (Button button in buttonList)
                 {
                     string msg = button.Slot[0].GetComponent<Text>().Content.Value;
