@@ -80,7 +80,7 @@ namespace Relinkquent
                     MatchCollection mc = Regex.Matches(msg, expr);
                     foreach (Match url in mc)
                     {
-                        if (Uri.IsWellFormedUriString(msg, UriKind.RelativeOrAbsolute))
+                        if (Uri.IsWellFormedUriString(url.Value, UriKind.RelativeOrAbsolute))
                         {
                             Hyperlink link = button.Slot.AttachComponent<Hyperlink>();
                             link.URL.Value = new Uri(url.Value);
