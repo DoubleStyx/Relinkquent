@@ -94,7 +94,7 @@ namespace Relinkquent
 //        /**   //****/**//// /**   /** /////**/**  //** /**////  /////**/**   /** /** //****  /**////  /**   
 //        /**    //***//******//******  ****** /**   //**//****** ****** //******  ***  //**   //******/***   
 //        //      ///  //////  //////  //////  //     //  ////// //////   //////  ///    //     ////// ///
-// Check out NEOSResolver to get a chance to win a free amog us gift card (valid for 20 ejections)
+// Check out NEOSResolver for a chance to win a free amog us gift card (valid for 20 ejections)
 /*
 ⠀ ⠀ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⣀⣤⣤⣤⣤⣤⣤⣤⣤⣄⣀
 ⠀ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⢀⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣤⡀
