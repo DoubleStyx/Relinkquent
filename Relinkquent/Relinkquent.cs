@@ -17,7 +17,7 @@ namespace Relinkquent
 
         public override string Name => "Relinkquent";
         public override string Author => "DoubleStyx";
-        public override string Version => "1.0.0";
+        public override string Version => "1.0.1";
         public override string Link => "https://github.com/DoubleStyx/Relinkquent";
 
         public static ModConfiguration config;
