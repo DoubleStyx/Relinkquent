@@ -6,6 +6,7 @@ using BaseX;
 using FrooxEngine.UIX;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
+using System.Diagnostics;
 
 namespace Relinkquent
 {
@@ -39,7 +40,11 @@ namespace Relinkquent
             static void Postfix(UIBuilder ___messagesUi, FriendsDialog __instance, ref Image __result, CloudX.Shared.Message message)
             {
                 if (message.MessageType != CloudX.Shared.MessageType.Text) return;
-                if (!harmonyHasChecked) harmonyHasPatch = Harmony.HasAnyPatches("dev.kokoa.messagecopy");
+                if (!harmonyHasChecked) 
+                {
+                    harmonyHasPatch = Harmony.HasAnyPatches("dev.kokoa.messagecopy");
+                    harmonyHasChecked = true;
+                }
                 List<Slot> child = ___messagesUi.Current.GetAllChildren();
                 List<Button> buttonList = new List<Button>();
 
