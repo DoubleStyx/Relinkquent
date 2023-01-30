@@ -60,7 +60,7 @@ namespace Relinkquent
                             text.Destroy();
                             var ui = new UIBuilder(c);
                             Button button = ui.Button(msg, new color(1, 1, 1, 0));
-                            button.LocalPressed += (IButton btn, ButtonEventData _) => { btn.World.InputInterface.Clipboard.SetText(btn.LabelText); };
+                            button.Enabled = false;
                             buttonList.Add(button);
                             var btnText = c.GetComponentInChildren<Text>();
                             btnText.Align = message.IsSent ? Alignment.MiddleRight : Alignment.MiddleLeft;
@@ -72,6 +72,7 @@ namespace Relinkquent
                     foreach (Slot c in child)
                     {
                         Button button = c.GetComponent<Button>();
+                        button.Enabled = true;
                         if (button != null)
                         {
                             buttonList.Add(button);
